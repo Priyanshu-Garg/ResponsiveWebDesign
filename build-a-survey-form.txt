@@ -1,0 +1,105 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Welcome! Kindly fill this Survey Form and provide your valuable feedback. Thank You!</p>
+    <form id="survey-form">
+      <fieldset id="first-fieldset">
+     <label id="name-label">Name: <input type="text" id="name" placeholder="Your name" required></label>
+      <label id="email-label">Email: <input type="email" id="email" placeholder="abc@xyz.com" required></label>
+      <label id="number-label">Age: <input type="number" id="number" min="10" max="120" placeholder="Your age ex.18"></label>
+      <label>Gender: <select id="dropdown">
+        <option>Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend>Are you having Job?</legend>
+     <label> <input type="radio" name="employment-status" value="yes"> Yes</label>
+     <label> <input type="radio" name="employment-status" value="no"> No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Languages Known?</legend>
+    <label><input type="checkbox" value="1" name="English"> English</label>
+    <label><input type="checkbox" value="2" name="Hindi"> Hindi</label>
+    <label><input type="checkbox" value="3" name="Other"> Other</label>
+    </fieldset>
+    <fieldset id="fourth-fieldset">
+   <label> Feedback: <textarea placeholder="Any Comments!" rows="3" cols="25"></textarea></label>
+    <button type="submit" id="submit">Submit</button>
+    </fieldset>
+    </form> 
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-color:cyan;
+  font-family:sans-serif;
+  margin:0 auto;
+  padding:10px;
+  width:100%
+}
+h1,p{
+  text-align:center;
+}
+h1{
+  font-size:40px;
+  font-weight:bold;
+}
+p{
+  font-size:21px;
+}
+
+label{
+  display:block;
+  margin:0 auto;
+  font-size:20px;
+ 
+}
+form{
+width:50%;
+margin: 0 auto;
+border:1px solid black;
+}
+input{
+  margin:5px auto;
+  padding: 5px;
+  max-width:200px;
+}
+#first-fieldset,#fourth-fieldset{
+  border:0;
+}
+fieldset{
+  border:2px solid black;
+  margin:10px 10px;
+  width:auto;
+}
+button{
+  width:200px;
+  background-color:black;
+  color:cyan;
+  height:2em;
+  font-size:20;
+  margin:10px ;
+}
+select{
+  padding:5px;
+}
+
+
+** end of undefined **
+
